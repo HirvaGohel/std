@@ -1,6 +1,6 @@
 // 1️⃣ Create a student object
 const student = {
-  name: "Hirva",
+  name: "Radha",
   age: 20,
   marks: 88,
   city: "Ahmedabad",
@@ -13,6 +13,8 @@ const student = {
 
 // 3️⃣ Print all keys and values using for...in
 console.log("📋 Student Details:");
+
+
 for (let key in student) {
   console.log(`${key}: ${student[key]}`);
 }
@@ -20,10 +22,9 @@ for (let key in student) {
 // Call the greeting method
 student.greet();
 
-
 // 4️⃣ Create an array of students
 const students = [
-  { name: "Hirva", marks: 88 },
+  { name: "Radha", marks: 88 }, 
   { name: "Ravi", marks: 75 },
   { name: "Mira", marks: 92 },
   { name: "Jay", marks: 60 },
@@ -41,7 +42,6 @@ function printTopStudents(studentArray) {
 }
 
 printTopStudents(students);
-
 
 // 6️⃣ Create a car object and update its color dynamically
 let car = {
@@ -65,4 +65,3 @@ function countProperties(obj) {
 
 console.log(`\n📦 Number of properties in student object: ${countProperties(student)}`);
 console.log(`📦 Number of properties in car object: ${countProperties(car)}`);
-
